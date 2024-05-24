@@ -1,0 +1,77 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+  --lato: "Lato", sans-serif;
+
+  --light: #f9f9f9;
+  --blue: #3c91e6;
+  --light-blue: #cfe8ff;
+  --grey: #eee;
+  --dark-grey: #aaaaaa;
+  --dark: #342e37;
+  --red: #db504a;
+  --yellow: #ffce26;
+  --light-yellow: #fff2c6;
+  --orange: #fd7238;
+  --light-orange: #ffe0d3;
+}
+.studentdashboard {
+  background: var(--grey);
+  height: 90vh;
+  padding: 2vh 2vw;
+  display: flex;
+}
+@media (width <= 860px) {
+  .sidenav-logo {
+    margin-right: 0;
+  }
+  .input-btn {
+    width: 100%;
+    height: 50%;
+    font-size: 2;
+    margin: 3% 5% 5% 0%;
+  }
+  .profile-box {
+    /* border: 2px solid #cfe8ff; */
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+    padding: 5%;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .input-btn {
+    width: 100%;
+    height: 50%;
+    font-size: 2vh;
+    margin: 3% 5% 5% 0%;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10dvw;
+    height: 5dvh;
+    cursor: pointer;
+  }
+  .s-dash-image {
+    /* margin: 0%; */
+    height: 90%;
+    width: 100%;
+  }
+
+  .profile-box {
+    /* border: 2px solid #cfe8ff; */
+    width: 100%;
+    /* height: 35dvh; */
+    margin: 20% 0;
+    /* padding: 2dvh 2dvw; */
+  }
+  .profile-headings {
+    width: 100%;
+    font-size: 3dvh;
+    font-weight: 500;
+    display: flex;
+  }
+}
