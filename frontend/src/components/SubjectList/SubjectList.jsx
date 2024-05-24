@@ -25,11 +25,11 @@ export const SubjectList = ({
   const location = useLocation();
   const data = location.state.data;
 
-  const teacherid = data.teacherId ? data.teacherId : "";
-  const studentid = data.rollno;
+  const teacherid = data.Tid ? data.Tid : "";
+  const studentid = data.userId;
   const branch = data.branch;
   const semester = data.semester;
-  const year = data.year;
+  // const year = data.year;
 
   useEffect(() => {
     const fetchSubjects = async () => {

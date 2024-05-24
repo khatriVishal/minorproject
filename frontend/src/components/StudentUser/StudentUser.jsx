@@ -14,12 +14,13 @@ const StudentUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        `${server}/student?rollno=${rollno}&password=${password}`
-      );
+      const response = await axios.post(`${server}/login`, {
+        rollno,
+        password,
+      });
       toast.success(response.data.message);
       navigate("/student/dashboard", {
-        state: { data: response.data },
+        state: { data: response.data.userData },
         replace: true,
       });
     } catch (error) {

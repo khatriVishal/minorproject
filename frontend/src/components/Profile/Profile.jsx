@@ -14,19 +14,19 @@ export const Profile = () => {
       <div className="profile-headings">
         <div className="p-heading">Name:-</div>
         <div className="p-heading val">
-          {data.name.charAt(0) + data.name.slice(1).toLowerCase()}
+          {data.userName.charAt(0) + data.userName.slice(1).toLowerCase()}
         </div>
       </div>
-      {data.rollno && (
+      {data.userId && (
         <div className="profile-headings">
-          <div className="p-heading">Rollno:-</div>
-          <div className="p-heading val">{data.rollno}</div>
+          <div className="p-heading">UserId:-</div>
+          <div className="p-heading val">{data.userId}</div>
         </div>
       )}
-      {data.teacherId && (
+      {data.Tid && (
         <div className="profile-headings">
           <div className="p-heading">TeacherId:</div>
-          <div className="p-heading val">{data.teacherId}</div>
+          <div className="p-heading val">{data.Tid}</div>
         </div>
       )}
       {data.branch && (
@@ -49,10 +49,10 @@ export const Profile = () => {
           <div className="p-heading val">{data.year}</div>
         </div>
       )}
-      {data.department && (
+      {data.dept && (
         <div className="profile-headings">
           <div className="p-heading">Department:-</div>
-          <div className="p-heading val">{data.department}</div>
+          <div className="p-heading val">{data.dept}</div>
         </div>
       )}
     </div>

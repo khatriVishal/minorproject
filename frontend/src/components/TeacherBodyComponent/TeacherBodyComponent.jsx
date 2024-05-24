@@ -95,7 +95,7 @@ const Subject = () => {
   const submithandler = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${server}/teacher/createnewsubject`, {
+      const response = await axios.post(`${server}/createsubject`, {
         subjectname,
         subjectcode,
         semester,
