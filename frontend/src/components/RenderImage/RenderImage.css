@@ -1,0 +1,41 @@
+.s-dash-image {
+  margin: 1%;
+  height: 79%;
+  width: 98%;
+}
+.s-dash-btn {
+  width: 100%;
+  padding: 2%;
+  background-color: white;
+  text-align: center;
+  border-radius: 6px;
+}
+.input-btn {
+  width: 60%;
+  height: 60%;
+}
+.s-dash-uploadedimage {
+  border-radius: 12px;
+}
+.p-image {
+  width: 30dvw;
+  height: 60dvh;
+  display: flex;
+  flex-direction: row;
+}
+@media (width <= 860px) {
+  .p-image {
+    width: 65dvw;
+    height: 30dvh;
+  }
+}
+@media (height >= 500px) and (width >= 535px) and (width <= 859px) {
+  .p-image {
+    width: 70dvw;
+    height: 35dvh;
+  }
+  .content {
+    flex-direction: column;
+    overflow: scroll;
+  }
+}

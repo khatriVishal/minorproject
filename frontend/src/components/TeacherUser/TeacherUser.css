@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #f8f7f6;
+  --secondary-color: #19263f;
+  --background-color: #1c2e50;
+  --temporary-color: #14133b;
+}
+.login-container {
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 4%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--secondary-color);
+}
+
+.login-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+}
+
+.lower-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lower-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-btn {
+  padding: 2dvw 2dvh;
+  font-size: 3dvh;
+  border: 1px solid var(--temporary-color);
+  text-decoration: none;
+  transition: all;
+  width: 100%;
+}
+.login-btn:hover {
+  background: rgb(28, 46, 80);
+  transition: background 1s ease-in-out;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.login-btn,
+input {
+  border-radius: 6px;
+}
