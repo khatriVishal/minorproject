@@ -11,8 +11,8 @@ export const RenderImage = () => {
   const data = location.state.data;
   let photo = data.photo;
   console.log(photo);
-  let rollno = data.rollno;
-  let teacherId = data.teacherId;
+  let rollno = data.userId;
+  let teacherId = data.Tid;
   const [selectedImage, setSelectedImage] = useState(DefaultProfile);
   useEffect(() => {
     const fetchProfile = () => {
@@ -34,7 +34,7 @@ export const RenderImage = () => {
     formData.append("rollno", rollno);
     formData.append("teacherId", teacherId);
     try {
-      const res = await axios.post(`${server}/uploadImage`, formData, {
+      const res = await axios.post(`${server}/upload`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           filename: filename,
